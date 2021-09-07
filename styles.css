@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+  --pg-color: hsla(0, 0%, 100%, 0.75);
+  --light-bg: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--light-bg);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+  border: 3px solid #0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#container {
+  width: 85vw;
+  height: 33rem;
+  max-width: 1000px;
+  border: 2px solid #f00;
+  display: flex;
+}
+
+.box {
+  width: 33.3%;
+  height: 100%;
+  padding: 0 3rem 0 3rem;
+}
+
+
+#box1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+}
+
+#box2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#box3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 15px 15px 0;
+}
+
+img {
+  display: block;
+  margin-top: 4rem;
+}
+
+
+h1 {
+  color: var(--light-bg);
+  text-transform: uppercase;
+}
+
+p {
+/*  width: 80%;*/
+  color: var(--pg-color);
+  margin-top: 2rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+
+button {
+  background-color: var(--light-bg);
+  color: hsl(31, 77%, 52%);
+  border: 1px solid #fff;
+  padding: .9rem 2rem;
+  border-radius: 25px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+
+#box1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+#box1 button:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+#box2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+#box2 button:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+
+#box3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+#box3 button:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+
+@media (max-width: 1172px) {
+
+
+  button {
+
+    margin-top: 2rem;
+
+  }
+
+
+
+}
+
+
+@media (max-width: 1000px) {
+
+
+}
+
+
+
+
+/* Mobile Device  */
+@media (max-width: 375px) {
+  body {
+  align-items: baseline;
+  }
+
+  #container {
+    margin-top: 1rem;
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+  }
+
+
+  .box {
+    width: 100%;
+    padding: 2rem;
+  }
+
+
+
+  button {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+  }
+
+  #box1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 15px 15px 0 0;
+  }
+
+  #box3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 15px 15px;
+  }
+
+}
