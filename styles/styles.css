@@ -119,37 +119,19 @@ button {
 }
 
 
-@media (max-width: 1172px) {
-
-
-  button {
-
-    margin-top: 2rem;
-
-  }
-
-
-
-}
-
-
-@media (max-width: 1000px) {
-
-
-}
-
-
 
 
 /* Mobile Device  */
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
   body {
   align-items: baseline;
   }
 
   #container {
     margin-top: 1rem;
-    width: 90vw;
+    /*width: 50vw;*/
+    min-width: 300px;
+    max-width: 330px;
     height: auto;
     flex-direction: column;
   }
